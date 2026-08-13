@@ -1,0 +1,145 @@
+1.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>minha pagina pessoal</title>
+</head>
+
+<body>
+
+    <h1>lucas espindula</h1>
+
+    <p>
+        ola meu nome e lucas espindula, to no 6 periodo de sistemas de informação, gosto do flamengo e do verdao apenas.
+    </p>
+
+    <h2>hobbies</h2>
+
+    <ul>
+        <li>dormir</li>
+        <li>ouvir musga</li>
+        <li>dirigir carro 2.0</li>
+    </ul>
+
+    <h2>minha imagem</h2>
+
+    <img src="imagem.jpg" alt="meu retrato">
+
+    <h2>uns sites daoras</h2>
+
+    <p>
+        acesso:
+        <a href="http://slither.com/io" target="_blank">
+            Google
+        </a>
+    </p>
+
+</body>
+</html>
+
+2.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>receita de miojo gourmet</title>
+</head>
+
+<body>
+
+    <h1>receita de miojo gourmet</h1>
+
+    <h2>ingredientes</h2>
+
+    <ul>
+        <li>1 miojo</li>
+        <li>agua</li>
+        <li>tempero do miojo, pq sem ele nao tem graça</li>
+        <li>1 ovo, se tiver</li>
+        <li>queijo, pq queijo melhora tudo</li>
+    </ul>
+
+    <h2>modo de preparo</h2>
+
+    <ol>
+        <li>coloque a agua pra ferver</li>
+        <li>jogue o miojo dentro da panela</li>
+        <li>espere uns 3 minutos e mexa de vez em quando</li>
+        <li>coloque o tempero e misture tudo</li>
+        <li>se quiser ficar chique, coloque um ovo e um pouco de queijo</li>
+        <li>agora e so comer e fingir que sabe cozinhar</li>
+    </ol>
+
+    <section>
+        <h2>informacoes extras</h2>
+
+        <p>
+            se tiver com muita fome, pode colocar mais coisas no miojo.
+        </p>
+
+        <p>
+            caso queime, parabens, voce desbloqueou uma nova habilidade.
+        </p>
+    </section>
+
+</body>
+</html>
+
+3.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>meu site brabo</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>site do lucas</h1>
+        <p>um site simples pq html ja da trabalho</p>
+    </header>
+
+    <nav>
+        <a href="#">inicio</a>
+        <a href="#">sobre mim</a>
+        <a href="#">contato</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>sobre mim</h2>
+
+            <p>
+                sou lucas espindula, estou no 6 periodo de sistemas de
+                informação e tentando sobreviver ate o final do curso.
+            </p>
+
+            <p>
+                gosto de futebol, carro e outras coisas que provavelmente
+                vao gastar meu dinheiro.
+            </p>
+        </section>
+
+        <section>
+            <h2>coisas que eu gosto</h2>
+
+            <ul>
+                <li>flamengo</li>
+                <li>uec</li>
+                <li>carro 2.0</li>
+                <li>dormir</li>
+                <li>ouvir musga</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>feio mas funciona - 2026</p>
+    </footer>
+
+</body>
+</html>
