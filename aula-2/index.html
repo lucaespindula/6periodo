@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios CSS - Aula 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== EXERCÍCIO 1 - Página estilizada com Flexbox ===================== -->
+    <header class="topo">
+        <h1 class="titulo-destaque">Site do Lucas</h1>
+        <p>Um site simples porque HTML já dá trabalho.</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#exercicio1">Início</a>
+        <a href="#exercicio2">Cartão</a>
+        <a href="#exercicio3">Perfil</a>
+    </nav>
+
+    <main>
+
+        <section id="exercicio1" class="secao">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou Lucas Espindula, estou no 6º período de Sistemas de
+                Informação e tentando sobreviver até o final do curso.
+            </p>
+            <p>
+                Gosto de futebol, carro e outras coisas que provavelmente
+                vão gastar meu dinheiro.
+            </p>
+        </section>
+
+        <section class="secao">
+            <h2>Coisas que eu gosto</h2>
+            <ul>
+                <li>Flamengo</li>
+                <li>UEC</li>
+                <li>Carro 2.0</li>
+                <li>Dormir</li>
+                <li>Ouvir música</li>
+            </ul>
+        </section>
+
+
+        <!-- ===================== EXERCÍCIO 2 - Cartão informativo (sem Flexbox) ===================== -->
+        <div id="exercicio2" class="pagina-cartao">
+            <h1>Curso de Sistemas de Informação</h1>
+
+            <div class="cartao">
+                <h2>Sobre o curso</h2>
+
+                <p>
+                    O curso de Sistemas de Informação prepara o aluno
+                    para trabalhar com tecnologia, programação e sistemas.
+                </p>
+
+                <ul>
+                    <li>Programação</li>
+                    <li class="destaque">Banco de Dados</li>
+                    <li>Desenvolvimento de Sistemas</li>
+                </ul>
+
+                <a href="#" class="botao">Saiba mais</a>
+            </div>
+        </div>
+
+
+        <!-- ===================== EXERCÍCIO 3 - Página de perfil (sem Flexbox/Grid) ===================== -->
+        <div id="exercicio3" class="pagina-perfil">
+            <h1>Meu Perfil</h1>
+
+            <div class="perfil">
+                <h2>Lucas Espindula</h2>
+
+                <p>
+                    Sou estudante de Sistemas de Informação e tenho interesse
+                    em programação, tecnologia e desenvolvimento de sistemas.
+                </p>
+
+                <h3>Tecnologias que conheço</h3>
+                <ul>
+                    <li class="tecnologia">HTML</li>
+                    <li class="tecnologia">CSS</li>
+                    <li class="tecnologia">Java</li>
+                </ul>
+
+                <a href="#" class="contato">Ver contato</a>
+            </div>
+
+            <section class="secao-tecnologias">
+                <h2>Tecnologias</h2>
+                <p>
+                    Estudo tecnologias voltadas para desenvolvimento
+                    web e desenvolvimento de sistemas.
+                </p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Feio mas funciona - 2026</p>
+    </footer>
+
+</body>
+
+</html>
