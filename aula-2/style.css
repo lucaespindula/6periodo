@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ===================== EXERCÍCIO 1 - fundo, fonte, padding, h1 destacado, menu com Flexbox ===================== */
+
+.topo {
+    background-color: #222222;
+    color: white;
+    padding: 30px;
+}
+
+.titulo-destaque {
+    color: #00aaff;
+    margin: 0 0 8px 0;
+}
+
+.menu {
+    background-color: #333333;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #00aaff;
+}
+
+.secao {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+}
+
+.rodape {
+    background-color: #222222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* ===================== EXERCÍCIO 2 - cartão informativo (SEM Flexbox) ===================== */
+
+.pagina-cartao {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.pagina-cartao h1 {
+    color: #222222;
+}
+
+.cartao {
+    background-color: white;
+    width: 400px;
+    padding: 25px;
+    margin: 30px auto 0 auto;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+.cartao h2 {
+    color: #0066cc;
+}
+
+.cartao ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.cartao li {
+    padding: 6px 0;
+}
+
+.destaque {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.botao:hover,
+.botao:focus {
+    background-color: #004499;
+}
+
+
+/* ===================== EXERCÍCIO 3 - página de perfil (SEM Flexbox/Grid) ===================== */
+
+.pagina-perfil {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.pagina-perfil h1 {
+    color: #222222;
+}
+
+.perfil {
+    background-color: white;
+    width: 450px;
+    padding: 25px;
+    margin: 30px auto;
+    border: 2px solid #444444;
+    border-radius: 10px;
+}
+
+.perfil h2 {
+    color: #0066cc;
+}
+
+.perfil ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.tecnologia {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+}
+
+.contato {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.contato:hover,
+.contato:focus {
+    color: red;
+}
+
+.secao-tecnologias {
+    width: 450px;
+    margin: 20px auto;
+}
