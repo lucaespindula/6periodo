@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #26352d;
+  background: #f5f0e5;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 45px 20px;
+  color: white;
+  background: #245342;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 42px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  border: 1px solid #c9d1c8;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+}
+
+button {
+  color: #245342;
+  background: #dce9dd;
+  cursor: pointer;
+}
+
+button:hover,
+button.ativo {
+  color: white;
+  background: #245342;
+}
+
+#contador {
+  color: #68746c;
+  font-size: 14px;
+}
+
+#lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 18px;
+  background: white;
+  border: 1px solid #d9dfd7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px #0002;
+  transform: translateY(-3px);
+}
+
+.cor {
+  position: relative;
+  height: 150px;
+  margin: -18px -18px 15px;
+  overflow: hidden;
+  padding: 12px;
+  color: white;
+  font-size: 28px;
+}
+
+.cor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.88;
+}
+
+.cor span {
+  display: none;
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: #245342;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #68746c;
+  font-size: 13px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 7px;
+  color: #245342;
+  background: #dce9dd;
+  border-radius: 12px;
+  font-size: 10px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  padding: 20px;
+  background: #0008;
+}
+
+.modal.aberto {
+  display: grid;
+  place-items: center;
+}
+
+.modal-conteudo {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  background: #fffdf8;
+  border-radius: 8px;
+}
+
+#fechar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: white;
+  background: #a95542;
+}
+
+#detalhes h2 {
+  color: #245342;
+}
+
+#detalhes h3 {
+  color: #a95542;
+}
+
+footer {
+  padding: 25px;
+  color: white;
+  background: #193b30;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  #lista {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+}

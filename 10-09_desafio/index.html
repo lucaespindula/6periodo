@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cães do Brasil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cães do Brasil</h1>
+    <p>Conheça algumas raças presentes no nosso país.</p>
+  </header>
+
+  <main>
+    <div class="filtros">
+      <input id="busca" type="text" placeholder="Pesquisar raça">
+      <button class="filtro ativo" data-tipo="todas">Todas</button>
+      <button class="filtro" data-tipo="nativas">Nativas</button>
+      <button class="filtro" data-tipo="populares">Populares</button>
+    </div>
+
+    <p id="contador"></p>
+    <section id="lista"></section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <button id="fechar">X</button>
+      <div id="detalhes"></div>
+    </div>
+  </div>
+
+  <footer>Desafio 10/09/2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
