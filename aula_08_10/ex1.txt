@@ -1,0 +1,11 @@
+app.get('/', (req, res) => {
+    res.send('Seja bem-vindo!');
+});
+
+app.get('/sobre', (req, res) => {
+    res.send('Sistema amador em desenvolvimento.');
+});
+
+app.get('/contato', (req, res) => {
+    res.send('Contato: lucas@gmail.com');
+});
