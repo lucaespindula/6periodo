@@ -1,0 +1,9 @@
+const alunos = [
+    { id: 1, nome: 'Lucas', curso: 'Sistemas de Informação' },
+    { id: 2, nome: 'Yassuchi', curso: 'Sistemas de Informação' },
+    { id: 3, nome: 'Kid', curso: 'Ciência da Computaria' }
+];
+
+app.get('/api/alunos', (req, res) => {
+    res.json(alunos);
+});
