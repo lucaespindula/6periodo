@@ -1,0 +1,6 @@
+app.get('/api/produto', (req, res) => {
+    res.json({
+        nome: 'Gol G6 1.0',
+        preco: 35000.00
+    });
+});
