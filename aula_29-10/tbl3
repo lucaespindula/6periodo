@@ -1,0 +1,42 @@
+1- npm install cors
+2- cors é uma regra aplicada pelo navegador e não pelo servidor, o postman não tem essa verificação, então mostra a resposta normalmente. Jájao navegador recebe a resposta do servidor mas bloqueia o js da página de acessar quando a origem nao for autorizada, a requisição chega ao backend nos dois casos, o que muda é se o cliente aplica ou não a política de segurança.
+3-com outra origem a requisição ainda chega ao servidor, mas o cabeçalho Access-Control-Allow-Origin não bate com a origem da página, o navegador bloqueia a leitura da resposta, e aparece o mesmo erro do ex 2, a comparação de origem é exata, protocolo, host e porta precisam bater todos com o que foi configurado no origin.
+4-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste CORS</title>
+</head>
+<body>
+    <h1>Teste de consulta API</h1>
+    <p>F12 para ver o resultado.</p>
+
+    <script>
+        fetch('http://localhost:3000/usuarios')
+            .then(r => r.json())
+            .then(console.log)
+            .catch(console.error);
+    </script>
+</body>
+</html>
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+5-
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:5500',
+    methods: ['GET']
+}));
+
+app.get('/usuarios', (req, res) => {
+    res.json([{ id: 1, nome: 'Lucas' }]);
+});
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+
+limitar os métodos aplica o princípio de menor privilégio, a api só libera pra essa origem as operações realmente necessárias, com methods: get, mesmo que existam rotas de post, put ou delete, o navegador só permite leitura, qualquer outra tentativa é barrada na fase de preflight, antes da requisição ser enviada.
+obs: isso não é proteção absoluta, um cliente fora do navegador não é afetado pelo cors e por isso restringir operações sensíveis (criar, editar, apagar) também exige autorização no backend, não só cors.
